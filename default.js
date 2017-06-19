@@ -1,20 +1,20 @@
 var num = Math.floor(Math.random()*11);
-var ans;
+var ans= parseInt(window.prompt('0~10の数字を入力'));
 var mes;
 
 while(ans != num){
-ans = parseInt(window.prompt('0~10の数字を入力'));
+;
 if(ans === num){
   mes = 'あたり';
 }
 else if(ans > num){
-  mes = 'もっと小さいです';
+  ans = parseInt(window.prompt('もっと小さいです\n0~10の数字を入力'));
 }
 else if(ans < num){
-  mes = 'もっと大きいです';
+  ans = parseInt(window.prompt('もっと大きいです\n0~10の数字を入力'));
 }
 else{
-  mes = '数字を入力してください';
+  ans = parseInt(window.prompt('数字を入力してください\n0~10の数字を入力'));
 }
 }
 
