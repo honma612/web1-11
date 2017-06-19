@@ -1,7 +1,9 @@
 var num = Math.floor(Math.random()*11);
-var ans = parseInt(window.prompt('0~10の数字を入力'));
-
+var ans;
 var mes;
+
+while(ans != num){
+ans = parseInt(window.prompt('0~10の数字を入力'));
 if(ans === num){
   mes = 'あたり';
 }
@@ -13,6 +15,7 @@ else if(ans < num){
 }
 else{
   mes = '数字を入力してください';
+}
 }
 
 document.getElementById('choice').textContent = mes;
