@@ -2,7 +2,7 @@ var num = Math.floor(Math.random()*11);
 var ans= parseInt(window.prompt('0~10の数字を入力'));
 var mes;
 
-while(ans != num){
+while(ans != num || ans){
 ;
 if(ans === num){
   mes = 'あたり';
